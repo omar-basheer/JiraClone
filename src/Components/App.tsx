@@ -1,14 +1,23 @@
-import React from "react"
+import React, { useState } from "react"
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
+import WorkArea from "./WorkArea";
 
-
-
-function App(){
+function App() {
+    const [activePage, setActivePage] = useState('Roadmap')
+    function handlePageChange(page: string) {
+        setActivePage(page);
+        
+    }
     return (
         <div>
             <Navbar />
-            <Sidebar />
+            <Sidebar
+                onMenuClick={handlePageChange}
+            />
+            <WorkArea
+                activePage={activePage}
+            />
         </div>
     )
 }
