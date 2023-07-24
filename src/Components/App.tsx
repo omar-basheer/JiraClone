@@ -1,7 +1,15 @@
 import React from "react"
+import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
+
+
+
 function App(){
     return (
-        <div>yep</div>
+        <div>
+            <Navbar />
+            <Sidebar />
+        </div>
     )
 }
 
