@@ -2,6 +2,7 @@ import React from 'react'
 import { ImGithub } from 'react-icons/im';
 
 import Breadcrumbs from '../../shared/components/BreadCrumbs'
+import List from './Lists/List';
 
 function BoardPage() {
     return (
@@ -15,6 +16,13 @@ function BoardPage() {
                         <span>Github Repo</span>
                     </button>
                 </a>
+            </div>
+
+            <div className='list-sections'>
+                <List />
+                <List />
+                <List />
+                <List />
             </div>
             {/* <div className='error'>404 Not Found</div>
             <div className='error-msg'>Oops... looks like the Board page is still under construction</div> */}
