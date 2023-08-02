@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { MdOutlineRoute } from "react-icons/md";
 import { BsCodeSlash } from "react-icons/bs";
 import { CgBoard } from "react-icons/cg";
-import { SideMenuClickFunction } from './Types';
+import { SideMenuClickFunction } from '../Types';
 
 
 

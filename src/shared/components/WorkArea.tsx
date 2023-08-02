@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import RoadmapPage from './RoadmapPage'
-import BoardPage from './BoardPage';
-import CodePage from './CodePage';
+import RoadmapPage from '../../Project/RoadMap/RoadmapPage'
+import BoardPage from '../../Project/Board/BoardPage';
+import CodePage from '../../Project/Code/CodePage';
 
 
 function WorkArea(props: {

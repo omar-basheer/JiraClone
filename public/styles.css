@@ -12,6 +12,10 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+a {
+    text-decoration: none;
+}
+
 nav {
     width: 100%;
     height: 4rem;
@@ -104,7 +108,7 @@ nav {
     margin-bottom: 2px;
 }
 
-.project-description{
+.project-description {
     color: #323f5578;
     font-size: 10px;
     font-weight: 900;
@@ -119,7 +123,7 @@ nav {
     margin-right: 1rem;
 }
 
-.sidebar-menu-item{
+.sidebar-menu-item {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -131,7 +135,7 @@ nav {
     padding-right: 2.5rem;
 }
 
-.sidebar-menu-item:hover{
+.sidebar-menu-item:hover {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -140,32 +144,33 @@ nav {
     /* background-color: #e9e9e9; */
     width: 210px;
     height: 50px;
-    padding-left:2.5rem;
+    padding-left: 2.5rem;
     color: #3C89FD;
     border-radius: 4px;
 }
 
-.sidebar-menu-item span{
+.sidebar-menu-item span {
     padding-left: 0.5rem;
     color: #344563;
     font-size: 16px;
 }
 
-.sidebar-menu-item.active{
+.sidebar-menu-item.active {
     border-radius: 4px;
     border-left: 4px solid
 }
 
-.work-area{
-    flex: 1;
+.work-area {
+    /* flex: 1; */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    align-items: flex-start;
     justify-content: center;
-    padding: 17rem;
+    padding-left: 18rem;
 }
 
-.error{
+.error {
     font-size: 3rem;
     font-weight: bold;
 }
@@ -173,6 +178,68 @@ nav {
 .error-msg {
     font-size: 1rem;
     color: #344563;
-  }
+}
 
 
+.breadcrumbs {
+    padding-top: 2rem;
+    font-size: 12px;
+    color: #344563;
+    margin-bottom: 1.5rem;
+}
+
+.breadcrumbs span {
+    padding-right: 5px;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.github-button {
+    /* padding-right: 5rem; */
+    display: flex;
+    align-items: center;
+    background-color: rgba(43, 73, 127, 0.07);
+    border-radius: 5px;
+    border: 1px rgba(16, 27, 47, 0.805);
+    width: 160px;
+    height: 40px;
+    color: #344563;
+    font-size: 14px;
+    cursor: pointer
+}
+
+.github-button:hover{
+    display: flex;
+    align-items: center;
+    background-color: rgba(43, 73, 127, 0.07);
+    border-radius: 5px;
+    border: 1px rgba(16, 27, 47, 0.805);
+    width: 160px;
+    height: 40px;
+    background-color: #ecf4fd;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.github-button span {
+    margin-left: 10px;
+    font-weight: 2px;
+}
+
+.github-button .github-icon {
+    color: #3c5072;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+
+.boardtitle {
+    margin-right: 50rem;
+    font-size: 22px;
+    color: #344563;
+    font-weight: bolder;
+    word-wrap: break-word
+}
