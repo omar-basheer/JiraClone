@@ -1,14 +1,17 @@
 import React from 'react';
-import {  IoPersonCircleSharp } from 'react-icons/io5'
+import { IoPersonCircleSharp } from 'react-icons/io5'
 
-function Issue(){
-    return(
+function Issue() {
+    return (
         <div className='issue-card'>
-            <p className='issue-description'>Implement backend server for application</p>
+            <div className='issue-description'>Implement backend server for application</div>
             <div className='card-bottom'>
-                <span>TASK-1</span>
-                <span>^</span>
-                <IoPersonCircleSharp />
+                <span className='tag'>TASK-1</span>
+                <span className='arrow'>^</span>
+                <div className='profile-icon'>
+                    <IoPersonCircleSharp />
+                </div>
+
             </div>
         </div>
     )
