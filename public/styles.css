@@ -24,6 +24,7 @@ nav {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: center;
+    position: fixed;
 }
 
 .navbar {
@@ -33,6 +34,7 @@ nav {
     align-items: center;
     padding-top: 0 1rem;
     padding-left: 2rem;
+    position: fixed;
 }
 
 .navbar-tabs {
@@ -63,9 +65,10 @@ nav {
 .navbar-icons {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    padding-right: 1rem;
-
+    padding-top: 9px;
+    margin-left: 45rem;
+    /* margin-left: auto; */
+    /* padding-right: 1rem; */
 }
 
 .navbar-icon {
@@ -112,7 +115,7 @@ nav {
 .project-description {
     color: #323f5578;
     font-size: 10px;
-    font-weight: 900;
+    font-weight: 400;
 }
 
 
@@ -167,7 +170,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 17rem;
+    padding: 23rem;
 }
 
 .work-area {
@@ -178,11 +181,14 @@ nav {
     align-items: flex-start;
     justify-content: center;
     padding-left: 18rem;
+    padding-top: 4rem;
+    /* margin-top: 6rem; */
 }
 
 .error {
     font-size: 3rem;
     font-weight: bold;
+    color: #344563;
 }
 
 .error-msg {
@@ -253,13 +259,14 @@ nav {
     font-size: 22px;
     color: #344563;
     font-weight: 700;
-    word-wrap: break-word
+    word-wrap: break-word;
+    /* font-family: Montserrat; */
 }
 
 .single-list {
     background-color: rgba(43, 73, 127, 0.07);
     width: 16rem;
-    height: 30rem;
+    min-height: 30rem;
     border-radius: 6px;
     display: flex;
     flex-direction: column;
@@ -267,24 +274,31 @@ nav {
     margin-right: 10px;
 }
 
-.single-list span {
+.single-list .heading {
     margin-right: 7px;
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 11px;
+    font-weight: 600;
 }
 
 .list-header {
     margin-top: 12px;
     margin-bottom: 12px;
+    /* margin-right: 111px; */
     color: #344563;
-    font-size: 12px;
-    font-weight: 900;
+    /* font-size: 10px; */
+    /* font-weight: 900; */
+    /* flex: 1; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    white-space: nowrap;
 }
 
 .single-list button {
     width: 95%;
     height: 32px;
-    margin-top: 20px;
+    margin-top: auto;
+    margin-bottom: 7px;
     display: flex;
     align-items: center;
     /* background-color: rgba(43, 73, 127, 0.07); */
@@ -323,7 +337,7 @@ nav {
 .issue-description {
     font-size: 13px;
     margin-left: 12px;
-    /* margin-top: 12px */
+    margin-right: 12px;
     padding-top: 12px;
 }
 
@@ -341,15 +355,21 @@ nav {
 .card-bottom .tag {
     margin-right: 120px;
     color: #3c537b;
+    font-size: 12px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
 }
 
+.card-bottom .tag .icon {
+    margin-right: 5px; /* Adjust the spacing as needed */
+  }
 .arrow {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .profile-icon {
-    font-size: 30px;
+    font-size: 22px;
 }
 
 
