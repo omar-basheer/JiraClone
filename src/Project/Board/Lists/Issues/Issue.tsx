@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoPersonCircleSharp } from 'react-icons/io5'
 import { IconType } from 'react-icons';
+import { BsThreeDots } from "react-icons/bs";
 
 
 function Issue(props: {
@@ -12,7 +13,10 @@ function Issue(props: {
 
     return (
         <div className='issue-card'>
-            <div className='issue-description'>{props.description}</div>
+            <div className='issue-description'>
+                <div className='description-text'> {props.description}</div>
+                <BsThreeDots className='icon' />
+                </div>
             <div className='card-bottom'>
                 <span className='tag'>
                     {React.createElement(props.tagIcon, { className: 'icon' })}

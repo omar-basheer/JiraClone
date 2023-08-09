@@ -6,7 +6,9 @@
 
 html {
     /* font-family: 'Jaldi', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Montserrat';
+    /* font-family: 'CircularStdBook', sans-serif; */
 }
 
 body {
@@ -151,6 +153,7 @@ nav {
     padding-left: 2.5rem;
     color: #3C89FD;
     border-radius: 4px;
+    transition: background 0.1s ease 0s;
 }
 
 .sidebar-menu-item span {
@@ -239,6 +242,7 @@ nav {
     background-color: #ecf4fd;
     font-size: 14px;
     cursor: pointer;
+    transition: background 0.1s ease 0s;
 }
 
 .github-button span {
@@ -264,7 +268,8 @@ nav {
 }
 
 .single-list {
-    background-color: rgba(43, 73, 127, 0.07);
+    /* background-color: rgba(43, 73, 127, 0.07); */
+    background-color: rgba(244,245,247);
     width: 16rem;
     min-height: 30rem;
     border-radius: 6px;
@@ -302,7 +307,9 @@ nav {
     display: flex;
     align-items: center;
     /* background-color: rgba(43, 73, 127, 0.07); */
-    background-color: rgba(196, 196, 196, 0.46);
+    /* background-color: rgba(196, 196, 196, 0.46); */
+    /* background-color: rgba(43, 73, 127, 0.07); */
+    background-color: rgba(244,245,247);
     border-radius: 3px;
     border: 1px rgba(16, 27, 47, 0.805);
     color: #344563;
@@ -313,6 +320,7 @@ nav {
 .single-list button:hover{
     background-color: rgba(42.76, 73.08, 126.57, 0.07);
     border: 1px rgba(16, 27, 47, 0.805);
+    transition: background 0.1s ease 0s;
 }
 
 .new-issue-icon{
@@ -334,12 +342,47 @@ nav {
     border-radius: 5px;
 }
 
+.issue-card:hover{
+    background-color: rgba(244,245,247);
+    color: #3c537b;
+    transition: background 0.1s ease 0s;
+}
+
+.issue-card:hover .issue-description .icon{
+    color: #3c537b;
+    transition: background 0.1s ease 0s;
+}
+
 .issue-description {
     font-size: 13px;
     margin-left: 12px;
     margin-right: 12px;
     padding-top: 12px;
+    display: flex;
+    align-items: center;
 }
+
+.issue-description .description-text {
+    flex-grow: 1; /* Allow the description to take up remaining space */
+    margin-right: 15px;
+}
+
+.issue-description .icon {
+    /* display: none; */
+    margin-left: auto; /* Push the icon to the right side */
+    width: 32px;
+    height: 23px;
+    font-size: 22px;
+    color: #3c537b;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* .issue-description .icon:hover{
+    display: block;
+    background-color: rgba(66, 82, 110, 0.122);
+    border-radius: 2px;
+} */
 
 
 .card-bottom {
@@ -381,3 +424,144 @@ nav {
     display: flex;
     flex-direction: row;
 }
+
+
+
+.modal-overlay{
+    position: fixed;
+    overflow-y: auto;
+    background-color: rgba(9, 30, 66, 0.54);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.modal-container{
+    background-color: rgb(255, 255, 255);
+    width: 50rem;
+    /* min-height: 45rem; */
+    /* overflow-y: auto; */
+    border-radius: 3px;
+    padding: 30px;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header{
+    margin-bottom: 40px;
+    color: #344563;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.modal-content{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-field label{
+    color: rgba(83, 96, 117, 0.95);
+    font-size: 12px;
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+
+.form-field .label-hint{
+    color: rgba(88, 101, 124, 0.788);
+    font-size: 11px;
+    font-weight: 420;
+}
+
+.form-field select,
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgb(23, 43, 77);
+    background-color: rgb(244, 245, 247);
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 0.1s ease 0s;
+}
+
+.issue-type{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-field textarea {
+    resize: vertical;
+    background-color: #ffffff;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 20px;
+}
+
+ .create-issue{
+    align-items: center;
+    margin-right: 7px;
+    background-color: rgb(18, 99, 219);
+    border-radius: 3px;
+    border: 0.5px rgba(103, 110, 120, 0.805);
+    width: 100px;
+    height: 32px;
+    color: #ffffff;
+    font-size: 14.5px;
+    cursor: pointer
+}
+ .cancel{
+    align-items: center;
+    margin-right: 7px;
+    border-radius: 3px;
+    border: 0.5px rgba(103, 110, 120, 0.805);
+    width: 70px;
+    height: 32px;
+    background-color: white;
+    color: #3c5072;
+    font-size: 14.5px;
+    cursor: pointer
+}
+
+.create-issue:hover{
+    background-color: rgb(47, 121, 232) ;
+    transition: background 0.1s ease 0s;
+}
+.cancel:hover{
+        background-color:#ebebebb4;
+        transition: background 0.1s ease 0s;
+}
+
+/* .modal-left{
+    flex: 2;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.modal-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+} */
